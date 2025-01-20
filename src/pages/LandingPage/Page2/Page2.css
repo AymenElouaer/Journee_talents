@@ -1,0 +1,221 @@
+/* General Section Styles */
+.program-section {
+    background-color: #002665;
+    color: #ffffff;
+    padding: 3rem 2rem;
+}
+
+.program-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Title */
+.program-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+/* Cards Grid */
+.program-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.program-card {
+    background-color: #004080;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 300px;
+    min-height: 499px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    font-weight: 400;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+}
+
+.program-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Black overlay covering the entire image */
+.program-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent black overlay */
+    z-index: 1; /* Ensure it's above the image but below text */
+}
+
+/* Title and "Plus/Moins" positioned at the bottom-left of the image */
+.program-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; /* Ensure it's above the overlay */
+    padding: 1rem;
+    color: #ffffff;
+    text-align: left;
+}
+
+.program-card-content h3 {
+    font-size: 1.25rem;
+    margin: 9; /* Remove margin for tight alignment */
+    color: #ffffff; /* Ensure white text */
+}
+
+.program-card-content .program-more {
+    font-size: 1rem;
+    margin: 0.25rem 0 0;
+    color: white; /* Highlighted color */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Details Text for Expanded Card */
+.program-details-text {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #f0f0f0; /* Light gray text */
+}
+
+/* Program Details Grid */
+.program-details {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    background-color: #002665;
+}
+
+/* Each individual program detail card */
+.program-detail {
+    flex: 1;
+    text-align: left;
+    padding: 1.5rem;
+    background-color: #002665;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* Position for the vertical line */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align button to the bottom */
+    min-height: 300px; /* Set a fixed minimum height to ensure button consistency */
+    box-sizing: border-box; /* Ensure padding doesn't affect size */
+}
+
+/* Adding vertical white line after each component */
+.program-detail:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0; /* Position on the right side */
+    top: 0;
+    height: 100%; /* Full height of the card */
+    width: 1px; /* The width of the line */
+    background-color: white; /* White color for the line */
+}
+
+/* Title Styling */
+.program-detail h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    margin-top: 0; /* Remove any top margin to align with the start of text */
+}
+
+/* Paragraph Styling */
+.program-detail p {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    margin-top: 0; /* Ensure paragraphs align well with the title */
+}
+
+/* Ensure the button is aligned at the bottom */
+.program-button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    align-self: flex-start; /* Align the button to the left */
+}
+
+/* Hover effect for button */
+.program-button:hover {
+    background-color: #00acee;
+    color: #ffffff;
+    border-color: #007bb5;
+}
+
+/* ----------- Responsive Adjustments Below This Line ----------- */
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    .program-cards {
+        flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+        justify-content: center;
+    }
+
+    .program-card {
+        width: 100%; /* Full width for smaller devices */
+        min-height: auto; /* Remove fixed height for better flexibility */
+        margin-top: 5rem;
+    }
+
+    .program-details {
+        flex-direction: column; /* Stack details vertically */
+    }
+
+    .program-detail {
+        text-align: center; /* Center-align text for mobile */
+    }
+
+    .program-image {
+        height: 350px; /* Adjust image height for smaller screens */
+    }
+    .program-button{
+        align-self: center;
+    }
+}
+
+/* For screens 480px and below (mobile devices) */
+@media (max-width: 480px) {
+    .program-title {
+        font-size: 1.5rem;
+    }
+
+    .program-card-content h3 {
+        font-size: 1rem;
+    }
+
+    .program-card-content .program-more {
+        font-size: 0.9rem;
+    }
+
+    .program-detail p {
+        font-size: 12px;
+    }
+
+    .program-button {
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+    }
+}

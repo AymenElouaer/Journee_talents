@@ -1,0 +1,334 @@
+/* Common height for all form fields (input, radio buttons, and select) */
+.form-control,
+.input-date,
+.input-location,
+.select-group select {
+    height: 45px !important;
+    border: 1px solid #ccc!important;
+    border-radius: 4px!important;
+    padding: 0px 10px!important;
+    font-size: 16px!important;
+    width: 100%!important;
+    margin-top: 10px!important;
+}
+.langue-margin{
+   width: 45%
+}
+/* Style for the radio group container */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 10px;
+}
+
+/* Style for the radio buttons */
+.radio-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.radio-label {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20.7px;
+    text-align: left;
+    color: #919498;
+    margin-bottom: 8px;
+}
+
+.radio-label::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
+
+.select-group1 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-buttons input {
+    margin-right: 5px;
+}
+
+.personal-info-form {
+    margin-top: 58px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.select-margin {
+    margin-top: 10px;
+    margin-left: 25px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.add-btn {
+    background-color: transparent;
+    color: #002665;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    position: absolute;
+    right: 0;
+}
+
+.add-btn:hover {
+    text-decoration: underline;
+}
+
+/* Target the react-tel-input container specifically */
+.react-phone .react-tel-input {
+    margin-top: 5px;
+    border: 1px solid #ccc !important;
+    /* Override border */
+    background-color: transparent !important;
+    /* Remove background */
+    border-radius: 4px !important;
+    /* Ensure rounded corners */
+    padding: 0 10px !important;
+    /* Adjust padding */
+    height: 45px !important;
+    /* Consistent height */
+    display: flex;
+    align-items: center;
+}
+
+/* Target the input inside the react-tel-input */
+.react-phone .react-tel-input input {
+    border: none !important;
+    /* Remove input field border */
+    background-color: transparent !important;
+    /* Transparent background */
+    width: 100% !important;
+    /* Full width */
+    height: 100% !important;
+    /* Match container height */
+    outline: none !important;
+    /* Remove focus outline */
+    padding: 0 !important;
+    /* No additional padding */
+}
+
+/* Target the dropdown and flags if necessary */
+.react-phone .react-tel-input .flag-dropdown {
+    border: none !important;
+    /* Remove the border */
+    background-color: transparent !important;
+    /* Optional: make the background transparent */
+    box-shadow: none !important;
+}
+
+/* Label adjustment */
+.react-phone label {
+    font-size: 16px !important;
+    color: #919498 !important;
+    margin-bottom: 5px !important;
+    display: block !important;
+}
+
+
+.nat-margin {
+    margin-left: 5px;
+}
+
+.invalid-feedback {
+    color: red !important;
+    font-size: 12px !important;
+    margin-top: 5px !important;
+    display: block !important;
+}
+
+/* Style for the professional-select dropdown */
+.professional-select {
+    position: relative;
+    padding-right: 40px;
+    font-size: 16px;
+    height: 45px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gray"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 45px;
+    appearance: none;
+    margin-top: 10px;
+    color: #919498;
+}
+
+.professional-select option:first-child {
+    color: #919498;
+}
+
+.professional-select option:not(:first-child) {
+    color: rgb(0, 0, 0);
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-row .form-group {
+    margin-bottom: 15px;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 25px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #919498;
+    width: 300%;
+    box-sizing: border-box;
+}
+
+.checkbox-item {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    align-items: center;
+    min-width: 150px;
+    box-sizing: border-box;
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.checkbox-item label {
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+    text-decoration-skip-ink: none;
+}
+
+.checkbox-container label::after {
+    content: none;
+}
+
+.form-group {
+    position: relative !important;
+}
+
+/* Add responsive design for small screens */
+@media (max-width: 768px) {
+
+    .form-control,
+    .input-date,
+    .input-location,
+    .select-group select {
+        font-size: 14px;
+        /* Smaller font size for fields */
+        height: 40px;
+        /* Smaller height */
+    }
+
+    .nationality {
+        font-size: small;
+    }
+
+    .radio-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+    .langue-margin{
+        width: 100%
+     }
+
+    .react-phone label {
+        font-size: 12px !important;
+        color: #919498 !important;
+        margin-bottom: 5px !important;
+        display: block !important;
+    }
+    
+
+    .radio-buttons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+        font-size: small;
+    }
+
+
+    .add-btn {
+        font-size: 10px;
+        /* Smaller font size for buttons */
+    }
+
+    .checkbox-container {
+        display: flex;
+        flex-direction: column;
+        /* Stack checkboxes vertically */
+        gap: 15px;
+        width: 100%;
+        /* Ensure full width */
+    }
+
+    .checkbox-item {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        min-width: 100%;
+        /* Make sure checkbox item takes full width */
+    }
+
+    .checkbox-item input[type="checkbox"] {
+        width: 14px;
+        /* Smaller checkbox size */
+        height: 14px;
+    }
+
+    .checkbox-item label {
+        font-size: 14px;
+        /* Smaller font size */
+        width: auto;
+        /* Allow text to occupy space needed */
+        white-space: normal;
+        /* Allow text to wrap and avoid overflow */
+        word-wrap: break-word;
+    }
+
+    .personal-info-form {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+
+    .professional-select {
+        width: 100%;
+        color: grey;
+        font-size: small;
+    }
+
+    .select-group1 {
+        gap: 10px;
+    }
+
+    .form-row {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,198 @@
+.footer {
+    background-color: #FFFFFF;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 2rem 1.5rem;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 9rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Footer Logo */
+.footer-logo {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-right: 6rem;
+}
+
+.footer-logo-image {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Footer Column Styling */
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+    text-align: left;
+}
+
+.footer-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #000;
+}
+
+.footer-paragraph {
+    font-size: 0.9rem;
+    line-height: 2.5;
+    color: #676767;
+    margin: 0.5rem 0;
+    transition: color 0.2s;
+}
+
+.footer-paragraph:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+/* Digital Clock Section */
+/* Clock Container */
+.clock {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border: 5px solid #333;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-hand {
+    position: absolute;
+    transform-origin: 50% 100%; /* Ensure rotation from the correct pivot point */
+    left: 50%;
+    bottom: 50%;
+    transform: rotate(0deg);
+}
+
+.hour-hand {
+    width: 3px;
+    height: 40px;
+    background-color: #000;
+    z-index: 3;
+}
+
+.minute-hand {
+    width: 2px;
+    height: 55px;
+    background-color: #555;
+    z-index: 2;
+}
+
+.second-hand {
+    width: 1px;
+    height: 60px;
+    background-color: red;
+    z-index: 1;
+}
+
+.clock::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+
+/* Hour Markers */
+.clock-hour-marker {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #333;
+    border-radius: 50%;
+    top: 10px;
+}
+
+
+/* Footer Bottom Section */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding: 0;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #666;
+}
+
+.footer-bottom-text {
+    margin-top: 10px;
+    margin-bottom: -30px;
+}
+
+.footer-bottom strong {
+    color: #000;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-bottom: -30px;
+}
+
+.social-links a {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0073b1;
+}
+
+/* Responsive Styles for Smaller Screens */
+
+/* For screens 768px and below (tablets) */
+@media (max-width: 768px) {
+    .footer-clock {
+        margin-top: 1.5rem;
+        justify-content: center;
+    }
+
+    .clock-circle {
+        width: 80px; /* Shrink clock size */
+        height: 80px;
+    }
+
+    .digital-time {
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+/* For screens 480px and below (mobile devices) */
+@media (max-width: 480px) {
+    .footer-clock {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    .clock-circle {
+        width: 60px; /* Further shrink clock for mobile */
+        height: 60px;
+    }
+
+    .digital-time {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+}

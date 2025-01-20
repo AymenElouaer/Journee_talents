@@ -1,0 +1,124 @@
+/* Container Section */
+.candidate-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #E7E7E7;
+    overflow: hidden;
+}
+
+.candidate-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+/* Text Section */
+.candidate-text {
+    flex: 1;
+    max-width: 50%;
+    padding: 4rem;
+    box-sizing: border-box;
+    order: 1; /* Default order for text */
+}
+
+.candidate-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #0E151F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.candidate-text p {
+    line-height: 1.8;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #676767;
+    margin-bottom: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.candidate-button {
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.candidate-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Image Section */
+.candidate-image {
+    flex: 1;
+    max-width: 50%;
+    height: 100%;
+    order: 2; /* Default order for image */
+}
+
+.candidate-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ----------- Responsive Adjustments Below This Line ----------- */
+
+/* For screens 768px and below (tablets) */
+@media (max-width: 768px) {
+    .candidate-container {
+        flex-direction: column; /* Stack text and image vertically */
+        text-align: center;
+    }
+
+    .candidate-text {
+        max-width: 100%;
+        padding: 2rem;
+        order: 2; /* Ensure text is always above image */
+    }
+
+    .candidate-image {
+        max-width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        order: 1; /* Ensure image is always below text */
+    }
+}
+
+/* For screens 480px and below (mobile devices) */
+@media (max-width: 480px) {
+    .candidate-space {
+        height: auto; /* Allow the section to expand with content */
+    }
+
+    .candidate-text h2 {
+        font-size: 1.75rem; /* Further reduce heading size */
+    }
+
+    .candidate-text p {
+        font-size: 0.85rem; /* Smaller font size for better readability */
+    }
+
+    .candidate-button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1.5rem; /* Adjust button padding */
+    }
+
+    .candidate-image img {
+        width: 100%; /* Ensure the image fills its container */
+        height: auto; /* Automatically scale the height */
+    }
+}

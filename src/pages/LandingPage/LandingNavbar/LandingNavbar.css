@@ -1,0 +1,149 @@
+/* Navbar General */
+.landing-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem; /* Keep original padding for PC */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background-color 2s ease;
+    background-color: transparent;
+    height: 90px; /* Keep original height for PC */
+}
+
+.landing-navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    height: 90px; /* Keep original height for PC */
+}
+
+/* Logo */
+.landing-nav-logo {
+    width: 150px; /* Keep original logo size for PC */
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Actions Section */
+.landing-navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Keep original gap for PC */
+}
+
+/* Buttons */
+.landing-navbar-btn {
+    color: #fff;
+    font-size: 18px; /* Keep original font size for PC */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Keep original gap for PC */
+    padding: 0.5rem 1rem; /* Keep original padding for PC */
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Language Selector */
+.landing-navbar-language {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Keep original gap for PC */
+    color: #FFFFFF;
+    font-size: 1rem; /* Keep original font size for PC */
+    cursor: pointer;
+}
+
+.landing-navbar-language i {
+    font-size: 1.2rem; /* Keep original icon size for PC */
+}
+
+/* Search, Globe, and Chevron Icons */
+.fa.fa-search,
+.fa.fa-globe,
+.fa.fa-chevron-down {
+    font-size: 1.2rem; /* Keep original icon size for PC */
+    color: #fff;
+    margin-right: 0.3rem;
+}
+
+/* Media Queries for Tablets */
+@media (max-width: 768px) {
+    .landing-navbar {
+        padding: 0.5rem 1rem; /* Adjust padding for tablets */
+        height: 70px; /* Reduce height for tablets */
+    }
+
+    .landing-navbar-container {
+        height: 70px;
+    }
+
+    .landing-nav-logo {
+        width: 100px; /* Scale down logo for tablets */
+    }
+
+    .landing-navbar-actions {
+        gap: 1rem; /* Reduce gap for tablets */
+    }
+
+    .landing-navbar-btn {
+        font-size: 16px; /* Adjust button font size for tablets */
+        padding: 0.4rem 0.8rem; /* Adjust padding */
+    }
+
+    .landing-navbar-language {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    .fa.fa-search,
+    .fa.fa-globe,
+    .fa.fa-chevron-down {
+        font-size: 1rem; /* Adjust icon size */
+    }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 480px) {
+    .landing-navbar {
+        padding: 0.5rem; /* Adjust padding for mobile */
+        height: 50px; /* Reduce height for mobile */
+    }
+
+    .landing-navbar-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .landing-nav-logo {
+        width: 70px; /* Scale down logo for mobile */
+    }
+
+    .landing-navbar-actions {
+        gap: 0.5rem; /* Reduce gap for mobile */
+        flex-wrap: wrap; /* Allow wrapping */
+    }
+
+    .landing-navbar-btn {
+        font-size: 14px; /* Adjust button font size for mobile */
+        padding: 0.3rem 0.6rem; /* Adjust padding */
+    }
+
+    .landing-navbar-language {
+        font-size: 0.8rem; /* Adjust font size */
+    }
+
+    .fa.fa-search,
+    .fa.fa-globe,
+    .fa.fa-chevron-down {
+        font-size: 0.9rem; /* Adjust icon size */
+    }
+}

@@ -1,0 +1,226 @@
+
+.landing-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+    position: relative;
+}
+
+.landing-image {
+    width: 100%;
+    height: 130vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*.landing-navbar {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    padding: 20px;*/
+/*    background-color: transparent;*/
+/*    z-index: 10;*/
+/*    transition: background-color 1s ease, opacity 0.5s ease , box-shadow 0.5s ease;*/
+/*}*/
+
+.landing-navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.landing-navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.landing-navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.landing-navbar .navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.landing-navbar .navbar-links li {
+    margin-left: 1.25rem;
+}
+
+.landing-navbar .navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+}
+
+
+.landing-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.25rem;
+    background-color: transparent;
+    z-index: 10; /* Ensure navbar is above other content */
+    transition: background-color 1s ease, opacity 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
+}
+
+.landing-navbar.scrolled {
+    background: #002665;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+/* Styling for the fixed phrases container */
+.fixed-phrases {
+    position: absolute;
+    top: 50%;
+    left: 0; /* Position on the left side */
+    transform: translateY(-50%); /* Vertically center it */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align vertically */
+    color: #fff;
+    padding: 10px;
+    /*z-index: 5;*/
+}
+
+/* Styling for the vertical line */
+.vertical-line {
+    width: 0.25rem;
+    background-color: #0000FF; /* Blue color for the line */
+    transition: height 0.3s ease; /* Smooth transition for height change */
+    margin-top: 8rem; /* Adjust to align with the sub-phrase */
+    margin-left: 3.25rem; /* Add left margin */
+    margin-right: -2.188rem;
+    height: 100%;
+}
+
+/* Container for the phrases */
+.phrases-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Align text to the left */
+    width: 52%;
+}
+
+/* Main phrase styling */
+.main-phrase {
+    font-size: 3.125rem;
+    font-weight: 400;
+    line-height: 3.594rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.625rem 0;
+    margin-left: 3.125rem; /* Add left margin */
+}
+
+/* Sub-phrase styling */
+.sub-phrase {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 0.625rem;
+    font-family: Arial, sans-serif;
+    margin-left: 3.125rem; /* Add left margin */
+}
+
+
+
+
+/* Responsive Design for Tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .landing-content {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+        height: 100vh; /* Allow content to flow */
+        padding: 0; /* Remove padding */
+    }
+
+    .landing-image {
+        width: 100%; /* Ensure image takes full width */
+        max-height: 100vh; /* Limit height */
+        object-fit: cover; /* Cover the area without distortion */
+    }
+
+    .fixed-phrases {
+        position: static; /* Remove absolute positioning */
+        margin-top: 20px; /* Add space between phrases */
+        align-items: center; /* Center-align phrases */
+        justify-content: center; /* Center content horizontally */
+        padding: 10px 0; /* Ensure no extra space */
+    }
+
+    .phrases-content {
+        width: 100%; /* Full width for smaller screens */
+        text-align: center; /* Center text on smaller screens */
+        margin-top: 0; /* Remove any extra space at the top */
+    }
+
+    .main-phrase {
+        font-size: 25px; /* Smaller font size for mobile */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .sub-phrase {
+        font-size: 14px; /* Smaller font size for mobile */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .vertical-line {
+        display: none; /* Hide the vertical line on smaller screens */
+    }
+}
+
+/* Responsive Design for Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .landing-content {
+        padding: 0; /* Remove extra padding */
+        height: 100vh; /* Make sure content is fluid */
+    }
+
+    .landing-image {
+        width: 100%;
+        max-height: 100vh; /* Further reduce the image height */
+        object-fit: cover; /* Cover the area without distortion */
+    }
+
+    .fixed-phrases {
+        margin-top: 15px; /* Adjust spacing for mobile devices */
+        flex-direction: column; /* Stack phrases vertically */
+        align-items: center; /* Center-align phrases */
+        justify-content: center; /* Center content horizontally */
+    }
+
+    .phrases-content {
+        width: 100%; /* Full width for mobile screens */
+        text-align: center; /* Center text on mobile screens */
+        margin-top: 10px; /* Add some space for better visibility */
+    }
+
+    .main-phrase {
+        font-size: 20px; /* Further reduce font size for mobile screens */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .sub-phrase {
+        font-size: 12px; /* Further reduce font size for mobile screens */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .vertical-line {
+        display: none; /* Hide the vertical line on mobile screens */
+    }
+}
+
+
+
+
+

@@ -1,0 +1,324 @@
+/* General container styling */
+.login-container {
+    display: flex;
+    height: auto;
+    width: 100%;
+    /* Allow content to flow naturally */
+    background-color: #efecec;
+    padding: 2rem;
+}
+
+/* Left Section */
+.login-left-section {
+    flex: 1;
+    margin: 80px auto auto 80px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.login-title {
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.login-highlight {
+    color: #00338d;
+}
+
+.login-description {
+    margin-top: 2rem;
+    font-family: Arial, serif;
+    font-size: 1rem;
+    line-height: 2;
+    color: #000000;
+    width:85%;
+}
+
+/* Right Section */
+.login-right-section {
+    width: 400px;
+    margin: auto;
+    margin-right: 200px;
+
+    /* Allow for content to grow */
+    /*max-height: 698px;*/
+    /* Optional: prevents growing too large */
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Vertically centers content */
+    position: relative;
+    top: 0;
+    /* Adjust top value as needed */
+}
+
+/* Header styling */
+.login-header {
+    font-size: 25px;
+    /*margin-bottom: 1rem;*/
+    color: #002665;
+    font-weight: 700;
+    text-align: center;
+    font-family: Arial, sans-serif
+}
+
+/* Form styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.login-form-label {
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 12px !important;
+    font-weight: 700;
+    color: #002665;
+}
+
+.login-form-input {
+    width: 100%; /* Ensures both inputs stretch to the same width */
+    height: 40px; /* Set a consistent height */
+    border: 1px solid #ccc; /* Consistent border style */
+    border-radius: 5px; /* Same border-radius for uniform appearance */
+    background-color: #FFFFFF; /* Background color */
+    color: black; /* Text color */
+    padding: 0 1rem; /* Padding for better spacing inside input */
+    box-sizing: border-box; /* Includes padding in width calculation */
+    font-family: Arial, sans-serif; /* Ensure font consistency */
+    font-size: 0.7rem; /* Text size */
+}
+
+.login-password-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.forgot-password-link {
+    font-size: 0.7rem;
+    color: #4A5CFE;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+.remember-me-group {
+    display: flex;
+    align-items: start;
+    /* Align items vertically */
+    gap: 0.5rem;
+    /* Space between checkbox and label */
+
+}
+
+.Checkbox {
+    margin-top: -18px;
+}
+
+.remember-me-label {
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 0.5;
+    /* Match the height of the checkbox */
+    color: #6D6D6D;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Buttons */
+/* Buttons */
+.login-form-button,
+.login-google-button {
+    background-color: #002665;
+    color: #FFFFFF;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    width: 100%; /* Ensures a consistent width */
+    height: 40px; /* Consistent height */
+    margin: -7px -7px; /* Centers the buttons horizontally */
+    display: flex;
+    align-items: center; /* Aligns content inside the button vertically */
+    justify-content: center; /* Centers content inside the button horizontally */
+    /*box-shadow: 2px 4px 7px 0px #00000040, 0px 4px 4px 0px #00000040;*/
+}
+
+/* Additional specific styling for Google button */
+.login-google-button {
+    background-color: #efecec;
+    color: #6D6D6D;
+    gap: 0.2rem; /* Adds spacing between logo and text */
+}
+
+
+/* Divider */
+.login-divider {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    /* Spacing between the lines and text */
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    color: #919498;
+}
+
+.login-divider .line {
+    margin: 20px auto 20px auto;
+    flex-grow: 1;
+    height: 1px;
+    /*max-width:50% !important;*/
+    background-color: #919498;
+}
+
+.login-divider .text {
+    padding: 0 0.5rem;
+    font-size: 0.7rem;
+    /* Add space around the text */
+}
+
+/* Signup link */
+.signup-link {
+    margin-top: 30px;
+    text-align: center;
+    color: #919498;
+    font-size: 0.7rem;
+}
+
+.signup-link a {
+    color: #4A5CFE;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.login-logo {
+    width: 270px;
+    /* Adjust to your desired size */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+.login-google-logo {
+    width: 27px;
+    /* Adjust size */
+    height: auto;
+}
+
+/* Password wrapper */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Password toggle icon */
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    /*margin-left: 100%;*/
+    /* Adjust distance from the right */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #919498;
+    /* Neutral color */
+    font-size: 0.8rem;
+}
+
+.password-toggle:hover {
+    color: #4A5CFE;
+    /* Highlight on hover */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Stack sections vertically */
+    .login-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .forgot-password-link {
+        font-size: 0.75rem;
+        color: #4A5CFE;
+        font-weight: 400;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+    }
+    .login-form-label {
+        margin-bottom: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 90%;
+        font-weight: 700;
+        color: #002665;
+    }
+
+
+    .login-left-section, .login-right-section {
+        max-width: 100%;
+        margin: 20px 0; /* Add spacing between sections */
+    }
+
+    /* Adjust padding and spacing for smaller screens */
+    .login-left-section {
+        padding: 1.5rem;
+        text-align: center; /* Center text content */
+    }
+
+    .login-right-section {
+        padding: 1.5rem;
+    }
+
+    .login-title {
+        font-size: 24px; /* Reduce title size */
+    }
+
+    .login-header {
+        font-size: 18px; /* Reduce header size */
+    }
+
+    .login-form-button, .login-google-button {
+        font-size: 16px; /* Reduce button text size */
+        padding: 0.8rem; /* Adjust button padding */
+    }
+
+    .login-divider .text {
+        font-size: 0.9rem; /* Reduce divider text size */
+    }
+
+    .signup-link {
+        font-size: 0.9rem; /* Reduce signup link text size */
+    }
+
+    .login-logo {
+        width: 200px; /* Scale logo for smaller screens */
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}

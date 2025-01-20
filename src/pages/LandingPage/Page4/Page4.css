@@ -1,0 +1,126 @@
+/* Container */
+.page4-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002665; /* Matches the blue background */
+    padding: 50px 20px;
+    color: white;
+}
+
+/* Content Wrapper */
+.page4-content {
+    display: flex;
+    max-width: 1200px;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Image Section */
+.page4-image img {
+    width: 100%;
+    max-width: 590px;
+    height: 550px;
+    object-fit: cover;
+    margin-right: 90px;
+}
+
+/* Text Section */
+.page4-text {
+    max-width: 514px;
+}
+
+.page4-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+}
+
+.page4-text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FFFFFF;
+    align-content: center;
+    margin-bottom: 100px;
+    font-family: Arial, sans-serif;
+}
+
+.recruteur-button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.recruteur-button:hover {
+    background-color: #00acee;
+    color: #ffffff;
+    border-color: #007bb5;
+}
+
+/* ----------- Responsive Adjustments Below This Line ----------- */
+
+/* For screens 768px and below (tablets) */
+@media (max-width: 768px) {
+    .page4-content {
+        flex-direction: column; /* Stack text and image vertically */
+        gap: 20px; /* Reduce gap between elements */
+        text-align: center;
+    }
+
+    .page4-image img {
+        max-width: 100%; /* Allow the image to scale */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .page4-text {
+        max-width: 100%; /* Full width for text */
+    }
+
+    .page4-text h2 {
+        font-size: 24px; /* Adjust heading size for smaller screens */
+        margin-bottom: 30px;
+    }
+
+    .page4-text p {
+        font-size: 13px; /* Slightly smaller font size for readability */
+        line-height: 24px;
+        margin-bottom: 50px; /* Reduce spacing */
+    }
+
+    .recruteur-button {
+        font-size: 0.9rem; /* Adjust button size */
+        padding: 0.5rem 1.5rem; /* Reduce padding */
+    }
+}
+
+/* For screens 480px and below (mobile devices) */
+@media (max-width: 480px) {
+    .page4-container {
+        padding: 30px 10px; /* Reduce overall padding */
+    }
+
+    .page4-text h2 {
+        font-size: 20px; /* Further reduce heading size */
+        margin-bottom: 20px;
+    }
+
+    .page4-text p {
+        font-size: 12px; /* Smaller paragraph font */
+        line-height: 22px;
+    }
+
+    .recruteur-button {
+        font-size: 0.8rem; /* Smaller button size for compact view */
+        padding: 0.4rem 1rem; /* Adjust padding further */
+    }
+}

@@ -1,0 +1,124 @@
+.fedi1-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.fedi1-form {
+    width: 650px;
+    background-color: #ffffff;
+    border: 1px solid #919498;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 70px;
+}
+
+.fedi1-title {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.1rem, 2.5vw, 1.7rem);
+    color: #919498;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fedi1-text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #919498;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fedi1-form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.fedi1-margin {
+    margin-bottom: 20px;
+}
+
+.fedi1-label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #002665;
+    margin-bottom: 5px;
+    display: block;
+    margin-left: 5rem;
+
+}
+
+.fedi1-input {
+    width: 145%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #919498;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #919498;
+    margin-left: 5rem;
+    margin-bottom: 3px;
+}
+
+.fedi1-verify-btn {
+    width: 70%;
+    height: 50px;
+    background-color: #002665;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease;
+    margin-bottom: 1px;
+    margin-left: 5rem;
+}
+.fedi1-resend-btn {
+    width: 70%;
+    height: 50px;
+    background-color: white;
+    color: #002665;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    margin-left: 5rem;
+
+}
+.fedi1-verify-btn:hover,
+.fedi1-resend-btn:hover {
+    filter: brightness(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    .fedi1-form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .fedi1-title {
+        font-size: 1.2rem;
+    }
+
+    .fedi1-text {
+        font-size: small;
+    }
+    .fedi1-input {
+        width: 70%;
+        height: 40px;
+
+    }
+}

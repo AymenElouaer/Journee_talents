@@ -1,0 +1,385 @@
+.voice-recording-container {
+    width: 100%;
+    max-width: 382px;
+    /* Limits maximum width */
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #919498;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+    margin: 20px auto;
+    /* Centers the container */
+}
+
+.audio-control-icon.recording {
+    color: red;
+}
+
+
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    color: #777;
+    font-size: small;
+    border: 1px dashed #ccc;
+}
+
+.react-player-wrapper {
+    flex-grow: 1;
+    max-width: 280px;
+    /* Limits the player's width on small screens */
+    margin: 0;
+    height: 20px
+}
+
+.vocalpic-container {
+    width: 480px;
+    height: 250px;
+    margin-top: 140px;
+    /* Ensures positioning based on top/left */
+
+}
+
+.record-instruction-text {
+    font-family: Arial, sans-serif;
+    height: auto;
+    width: 300px;
+    /* Font family set to Arial */
+    font-size: 13px;
+    /* Font size */
+    font-weight: 400;
+    line-height: 13.8px;
+    /* Line height */
+    color: #6D6D6D;
+    /* Text color */
+    margin: 50px auto 70px 50px;
+    /* Left margin */
+}
+
+.record-instruction-text div {
+    margin-bottom: 15px;
+    /* Adds space between each text */
+}
+
+.voice-recording-title {
+    width: 201px;
+    margin: 27px auto 0;
+    /* Center the title horizontally with a top margin */
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    /* Use the Arial Rounded MT Bold font */
+    font-size: 20px;
+    font-weight: 700;
+    color: #002665;
+    /* Set text color */
+    text-align: center;
+    /* Center the text horizontally */
+}
+
+.voice-recording-text {
+    width: 540px;
+    margin-top: 29px;
+    /* Space between the title and the text */
+    font-family: Arial, sans-serif;
+    /* Use the Arial font */
+    font-size: 18px;
+    font-weight: 400;
+    /* Align text to the left */
+    color: #6D6D6D;
+    /* Set text color if needed */
+}
+
+.voice-recording-text div {
+    margin-bottom: 4px;
+    /* Adds space between each text */
+}
+
+.button-container3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 220px;
+}
+
+/* Responsive Audio Upload Styles */
+.audio-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 85px;
+    margin-top: -10px;
+    justify-content: center;
+    border: 2px dashed #797b83;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 55px;
+    height: 19px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.audio-upload-container:hover {
+    background-color: #e9f3ff;
+    border-color: #0056b3;
+}
+
+.audio-upload-icon {
+    font-size: 8px;
+    color: #007bff;
+    margin-bottom: 1px;
+}
+
+.audio-upload-text {
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    color: #555;
+    text-align: center;
+}
+
+.audio-upload-input {
+    display: none;
+}
+
+
+.blue-bg {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #002665;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .placeholder {
+        font-size: 0.4rem;
+        /* Smaller font size for smaller devices */
+        padding: 8px;
+        /* Adjust padding */
+    }
+
+    .audio-upload-container {
+        margin-left: 0;
+        flex-direction: row;
+        gap: 5px;
+        padding: 15px;
+        max-width: 60px;
+    }
+
+    .audio-upload-icon {
+        font-size: 11px;
+    }
+
+    .audio-upload-text {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .placeholder {
+        font-size: 0.7rem;
+        /* Further reduce font size for very small devices */
+        padding: 6px;
+        /* Adjust padding for very small screens */
+        text-align: center;
+        /* Ensure text is centered on tiny screens */
+    }
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .verification-container {
+        display: flex;
+        flex-direction: column;
+        /* Stack the sections vertically */
+        padding: 10px;
+        /* Add padding for mobile */
+    }
+
+    .verification-left-section,
+    .verification-right-section {
+        width: 100%;
+        position: relative;
+        margin: 0;
+        /* Remove any margin on small screens */
+    }
+
+    .vocalpic-container {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .record-instruction-text {
+        width: 100%;
+        font-size: 12px;
+        margin: 20px auto;
+    }
+
+    .voice-recording-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 60px;
+        gap: 15px;
+
+    }
+
+    .react-player-wrapper {
+        width: 60%;
+        max-width: 100px;
+        height: 30px;
+        /* Set max width for mobile */
+
+    }
+
+    .voice-recording-title {
+        font-size: 18px;
+        /* Adjust font size for mobile */
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    .voice-recording-text {
+        width: 100%;
+        font-size: 14px;
+        /* Adjust text size */
+        margin-top: 10px;
+        text-align: center;
+        /* Center text on small screens */
+    }
+
+    .button-container3 {
+        display: flex;
+        flex-direction: row;
+        /* Stack buttons vertically */
+        align-items: center;
+        font-size: 11px;
+        padding: 10px;
+
+        /* Center buttons horizontally */
+        gap: 30px;
+        /* Space between buttons */
+        margin-top: 20px;
+    }
+
+    .verification-button1 {
+        width: 100%;
+        /* Make buttons full-width on small screens */
+        max-width: 300px;
+        /* Optional: limit the max width */
+    }
+}
+
+/* For even smaller devices (phones) */
+@media screen and (max-width: 480px) {
+    .voice-recording-container {
+        flex-direction: column;
+        /* Stack elements vertically */
+        padding: 10px;
+    }
+
+    .react-player-wrapper {
+        max-width: 100%;
+        /* Ensure the player takes full width */
+    }
+
+    .voice-recording-title {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .voice-recording-text {
+        font-size: 12px;
+    }
+
+
+    .verification-button1 {
+        font-size: 16px;
+        /* Adjust font size of buttons */
+        padding: 10px 0;
+    }
+
+    .blue-bg {
+        font-size: 18px;
+    }
+}
+
+.vr-text {
+    width: 300px;
+    height: auto;
+    margin: 50px auto 70px 37px;
+    position: absolute;
+    top: 542px;
+    left: 238px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13.8px;
+    text-align: left;
+    color: #6D6D6D;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .vr-text {
+        width: 90%;
+        /* Make the width more flexible */
+        position: relative;
+        top: auto;
+        /* Remove absolute positioning */
+        left: auto;
+        /* Center it within the parent */
+        margin: 20px auto;
+        /* Adjust the margin for better positioning */
+        font-size: 12px;
+        /* Reduce font size */
+    }
+
+    .blue-bg {
+        width: 100%;
+        height: 45px;
+        border-radius: 10px;
+        background-color: #002665;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .save-button1 {
+        width: 100%;
+        height: 45px;
+        border-radius: 10px;
+        background-color: #002665;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .vr-text {
+        position: relative;
+        width: 100%;
+        /* Full width for very small screens */
+        font-size: 11px;
+        /* Even smaller font size */
+        margin: 10px auto;
+        /* Tighter margin */
+        text-align: left;
+    }
+}

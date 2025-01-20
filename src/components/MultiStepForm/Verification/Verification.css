@@ -1,0 +1,318 @@
+.verification-container {
+    display: flex;
+    width: 1026px;
+    height: auto;
+    border: 1px solid #919498;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 33px;
+    margin-bottom: 200px;
+    box-sizing: border-box;
+}
+
+.verification-section {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.verification-left-section {
+    width: 418px;
+}
+
+.verification-right-section {
+    width: 608px;
+}
+
+.verification-divider {
+    width: 1px;
+    background-color: #919498;
+    margin: 0 10px;
+    /* Adjust spacing between sections */
+}
+
+/* left section content */
+.text-first {
+    width: 219px;
+    height: 14px;
+    margin: 0 auto;
+    opacity: 1;
+    /* Set opacity to 1 so that it's visible */
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13.8px;
+    text-align: left;
+    color: #919498;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.text-second {
+    width: 150px;
+    height: 14px;
+    margin-left: 10px;
+    /* Margin to the left */
+    margin-top: 44px;
+    /* Margin top from the first text */
+    opacity: 1;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13.8px;
+    text-align: left;
+    color: #919498;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.idImage-container {
+    display: flex;
+    margin: 31px auto 0 61px;
+    /* Add a margin above the images */
+    gap: 50px;
+    /* Space between the two images */
+}
+
+.id-image {
+    width: 120px;
+    height: 95px;
+    opacity: 1;
+    object-fit: contain;
+    /* Ensure the images scale properly */
+}
+
+.text-third {
+    width: 113px;
+    height: 14px;
+    margin: 28px auto 0 10px;
+    /* Space below the images */
+    /* Alignment with the previous texts */
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #919498;
+}
+
+.passport-image {
+    margin: 20px auto 20 65px;
+    width: 250px;
+    height: 280px;
+    opacity: 1;
+    object-fit: contain;
+
+}
+
+/* right section content css */
+
+.radio-group1 {
+    display: flex;
+    flex-direction: row;
+    margin: 16px auto 74px 50px;
+    align-items: center;
+
+    gap: 150px;
+    /* Space between the radio buttons */
+    width: 473px;
+    height: 21px;
+    top: 478px;
+    left: 719px;
+
+}
+
+.radio-label1 {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.7px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #919498;
+}
+
+.radio-label1::after {
+    content: none;
+    /* This will remove the asterisk */
+}
+
+.upload-title {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.7px;
+    text-align: left;
+    color: #002665;
+    margin-bottom: 10px;
+}
+
+.upload-title span {
+    color: red;
+    /* Add red color to the asterisk */
+}
+
+.radio-input1 {
+    margin-right: 8px;
+    /* Space between the radio button and the label text */
+}
+
+.button-container1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.verification-button1 {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.verification-button1:hover {
+    filter: brightness(2);
+    /* Increases the brightness to highlight it */
+}
+
+.save-button1 {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #002665;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.next-button1 {
+    background-color: white;
+    color: #002665;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+    .verification-container {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: 10px;
+    }
+
+    .radio-label1 {
+        font-family: Arial, sans-serif;
+        font-size: small;
+        font-weight: 400;
+        align-items: center;
+    }
+
+    .verification-left-section,
+    .verification-right-section {
+        width: 100%;
+    }
+
+    .verification-divider {
+        display: none;
+        /* Hide divider on small screens */
+        margin: 0;
+    }
+
+    .idImage-container {
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .id-image,
+    .passport-image {
+        width: 60%;
+        height: auto;
+        margin: auto;
+    }
+
+    .text-first,
+    .text-second,
+    .text-third {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .radio-group1 {
+        flex-direction: row;
+        align-items: center;
+        margin: 16px 0 100px 0;
+        padding: 2px;
+        gap: 20px;
+    }
+
+    .error {
+        color: red;
+        font-size: 12px;
+    }
+
+    .radio-input1 {
+        margin-right: 10px;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .upload-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .button-container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .verification-button1 {
+        width: 100%;
+    }
+
+    .save-button1,
+    .next-button1 {
+        width: 100%;
+        font-weight: 400;
+        font-size: 12px;
+        height: 45px;
+    }
+}
+
+/* Further adjustments for very small screens (mobile phones) */
+@media (max-width: 480px) {
+    .verification-container {
+        margin-bottom: 20px;
+    }
+
+
+    .verification-left-section,
+    .verification-right-section {
+        padding: 10px;
+    }
+
+    .idImage-container {
+        margin: 10px 0;
+        flex-direction: row;
+
+    }
+
+
+    .id-image {
+        width: 35%;
+        height: auto;
+    }
+
+    .passport-image {
+        width: 40%;
+        height: 60%;
+    }
+}
